@@ -12,7 +12,7 @@ import psycopg
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
-APP_VERSION = "1.0.0"  # Lab 3, Task E: change this, merge, and watch it go live
+APP_VERSION = "1.0.1"  # Lab 3, Task E: change this, merge, and watch it go live
 APP_ENV = os.environ.get("APP_ENV", "development")
 DATABASE_URL = os.environ["DATABASE_URL"]  # crash at start if it is missing
 MISSING = os.environ["DEFINITELY_NOT_SET"]  # Lab 3, Task F: deliberate start-up failure
