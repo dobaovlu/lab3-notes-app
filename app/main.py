@@ -37,5 +37,7 @@ def health_db():
         return JSONResponse(status_code=503, content={"db": "error"})
 
 
-# TODO (Lab 3, Task A): add a GET /health endpoint here.
-# It must be fast, need no login, and touch nothing — not even the database.
+@app.get("/health")
+def health():
+    # Fast, no auth, touches nothing — this is the platform health check.
+    return {"status": "ok"}
